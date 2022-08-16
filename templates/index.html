@@ -1,0 +1,889 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>UOB IEEE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-edu-meeting.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body>
+
+  <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p>Social Links</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="{% url 'home' %}" class="logo">
+                          IEEE - University of Birmingham
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li><a href="{% url 'events' %}">AGM 2022</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">EVENTS</a>
+                              <ul class="sub-menu">
+                                  <li><a href="{% url 'events' %}">Upcoming EVENTS</a></li>
+                                  <li><a href="meeting-details.html">EVENT Details</a></li>
+                              </ul>
+                          </li>
+                          <li class="has-sub">
+                            <a href="javascript:void(0)">COMMITTEE</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'events' %}">PRESENT COMMITTEE</a></li>
+                                <li><a href="meeting-details.html">PAST COMMITTEE</a></li>
+                            </ul>
+                          </li>
+                          <li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
+                          <!-- <li class="scroll-to-section"><a href="#courses">PAST</a></li>  -->
+                          <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'images/course-video.mp4' %}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+              <h6>Hello 你好 Hola नमस्ते ciao bonjour, </h6>
+              <h2>Welcome to The IEEE Student Branch Chapter, University of Birmingham </h2>
+              <p style="font-size:15px">This is the Home Page of the IEEE UoB Student Branch Chapter website!
+                Our website is continually updated with all of the latest lectures and events that the Branch is running – check back often to make sure that you don’t miss out!!!
+                <br> 
+                IEEE Student Branch Chapter at The University of Birmingham was inugrated in February 2020 at the University. It started as the IEEE UK and Ireland PES Chapter. We are based within the School of Engineering, University of Birmingham. We also hold the reporting duties of the IEEE Student Branch at UoB in addition to out IEEE PES activities.</p>
+              <!-- <div class="main-button-red">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+              </div> -->
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+          
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'images/service-icon-01.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Networking</h4>
+                <p>Networking with fellow IEEE across the UK and world to share ideas and developing game changing solutions for humanity</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'images/service-icon-02.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Resource Centre</h4>
+                <p>Members get Free access to the IEEE and PES (Power and Energy systems) Resource Centre</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'images/service-icon-03.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Local Chapter Access</h4>
+                <p>Free membership in your local IEEE / PES chapter</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'images/service-icon-02.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Discounts on Conferences</h4>
+                <p>Discounts to technical conferences held by IEEE</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'images/service-icon-03.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Discounts to Events</h4>
+                <p>Discounts to tutorials and webinars on various topics organised under IEEE</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="{% static 'images/service-icon-03.png' %}" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Voluntering and Organising Experience</h4>
+                <p>Benefits through engaging in Student branch Chapters and event organisation enhanching your CV and personality development.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Upcoming Events</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="categories">
+            <h4>Events</h4>
+            <ul>
+              <li><a href="#">Sed tempus enim leo</a></li>
+              <li><a href="#">Aenean molestie quis</a></li>
+              <li><a href="#">Cras et metus vestibulum</a></li>
+              <li><a href="#">Nam et condimentum</a></li>
+              <li><a href="#">Phasellus nec sapien</a></li>
+            </ul>
+            <div class="main-button-red">
+              <a href="{% url 'events' %}">All Upcoming Events</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <!-- <div class="price">
+                    <span>$22.00</span>
+                  </div> -->
+                  <a href="meeting-details.html"><img src="{% static 'images/meeting-01.jpg' %}" alt="New Lecturer Meeting"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>10</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>New Lecturers Meeting</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <!-- <div class="price">
+                    <span>$36.00</span>
+                  </div> -->
+                  <a href="meeting-details.html"><img src="{% static 'images/meeting-02.jpg' %}" alt="Online Teaching"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>24</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>Online Teaching Techniques</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <!-- <div class="price">
+                    <span>$14.00</span>
+                  </div> -->
+                  <a href="meeting-details.html"><img src="{% static 'images/meeting-03.jpg' %}" alt="Higher Education"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>26</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>Higher Education Conference</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <!-- <div class="price">
+                    <span>$48.00</span>
+                  </div> -->
+                  <a href="meeting-details.html"><img src="{% static 'images/meeting-04.jpg' %}" alt="Student Training"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>30</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>Student Training Meetup</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="apply-now" id="apply">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>APPLY FOR IEEE MEMEBERSHIP</h3>
+                <p>Join a community of more than 400,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate. <br>The below link take you to the official IEEE page for Membership signup.</p>
+                <div class="main-button-red">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>APPLY FOR Power and Energy Society MEMBERSHIP</h3>
+                <p>Join a community of more than 400,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate. <br>The below link take you to the official IEEE-PES page for Membership signup.</p>
+                <div class="main-button-yellow">
+                  <div class="scroll-to-section"><a href="https://www.ieee-pes.org/">Join Us Now!</a></div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordions is-first-expanded">
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>About Edu Meeting HTML Template</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>If you want to get the latest collection of HTML CSS templates for your websites, you may visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">Too CSS website</a>. If you need a working contact form script, please visit <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more info.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>HTML CSS Bootstrap Layout</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna, maximus at semper sit amet, eleifend eget neque. Nunc facilisis quam purus, sed vulputate augue interdum vitae. Aliquam a elit massa.<br><br>
+                        Nulla malesuada elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh consequat aliquet. Proin fringilla, quam at euismod porttitor, odio odio tempus ligula, ut feugiat ex erat nec mauris. Donec viverra velit eget lectus sollicitudin tincidunt.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>Please tell your friends</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit, at ullamcorper justo suscipit sit amet. Quisque at suscipit mi, non efficitur velit.<br><br>
+                        Cras et tortor semper, placerat eros sit amet, porta est. Mauris porttitor sapien et quam volutpat luctus. Nullam sodales ipsum ac neque ultricies varius.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion last-accordion">
+                <div class="accordion-head">
+                    <span>Share this to your colleagues</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Maecenas suscipit enim libero, vel lobortis justo condimentum id. Interdum et malesuada fames ac ante ipsum primis in faucibus.<br><br>
+                        Sed eleifend metus sit amet magna tristique, posuere laoreet arcu semper. Nulla pellentesque ut tortor sit amet maximus. In eu libero ullamcorper, semper nisi quis, convallis nisi.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Meet the Branch Counselors and Student Branch Officers </h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-courses-item owl-carousel">
+            <div class="item">
+              <img src="{% static 'images/counsellor.png' %}" alt="Course One">
+              <div class="down-content">
+                <h4>Prof. Xiao-Ping Zhang</h4>
+                <h4>Counselor of IEEE Student Branch</h4>
+                <h4>School of Engineering</h4>
+                <!-- <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$160</span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/counsellor2_david.png' %}" alt="Course Two">
+              <div class="down-content">
+                <h4>Dr Daniel Donaldson </h4>
+                <h4>Past Chair and Counselor of IEEE PES Student Chapter</h4>
+                <h4>School of Engineering</h4>
+                <!-- <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$180</span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/Chair_Nan.png' %}" alt="">
+              <div class="down-content">
+                <h4>Nan Chen </h4>
+                <h4>Chair </h4>
+                <h4>School of Engineering</h4>
+                <!-- <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$140</span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/VC_rabee.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Rabee Jibrin</h4>
+                <h4>Vice-Chair</h4>
+                <h4>School of Engineering</h4>
+                <!-- <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$120</span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/secretary_David.png' %}" alt="">
+              <div class="down-content">
+                <h4>Zixuan Jia</h4>
+                <h4> Secretary </h4>
+                <h4>School of Engineering</h4>
+                <!-- <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$250</span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/treasurer_david.png' %}" alt="">
+              <div class="down-content">
+                <h4>David Lee</h4>
+                <h4>Treasurer</h4>
+                <h4>School of Engineering</h4>
+                <!-- <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$270</span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/web_rutwik.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Rutwik Patil</h4>
+                <h4>Web Master</h4>
+                <h4>School of Engineering</h4>
+                <!-- <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$340</span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <!-- <div class="item">
+              <img src="{% static 'images/course-04.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Please visit our website again</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$360</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/course-01.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Responsive HTML Templates for you</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/course-02.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Download Free CSS Layouts for your business</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$430</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/course-03.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Morbi in libero blandit lectus cursus</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$480</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="{% static 'images/course-04.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Curabitur molestie dignissim purus</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$560</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6"> 
+          <!-- <div class="row">
+            <div class="col-lg-12">
+              <h2>A Few Facts About Our University</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content percentage">
+                    <div class="count-digit">94</div>
+                    <div class="count-title">Succesed Students</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">126</div>
+                    <div class="count-title">Current Teachers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content new-students">
+                    <div class="count-digit">2345</div>
+                    <div class="count-title">New Students</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">32</div>
+                    <div class="count-title">Awards</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="video">
+            <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"><img src="{% static 'images/play-icon.png' %}" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 align-self-center">
+          <div class="row">
+            <div class="col-lg-15">
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="550" height="550" id="gmap_canvas" src="https://maps.google.com/maps?q=University%20of%20Birmingham&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-lg-4">
+          <div class="right-info">
+            <ul>
+              <!-- <li>
+                <h6>Phone Number</h6>
+                <span>010-020-0340</span>
+              </li> -->
+              <li>
+                <h6>Email Address</h6>
+                <span>nxc718@student.bham.ac.uk</span>
+              </li>
+              <li>
+                <h6>Street Address</h6>
+                <span>The University of Birmingham
+                  Edgbaston
+                  Birmingham
+                  B15 2TT
+                  United Kingdom</span>
+              </li>
+              <li>
+                <h6>Membership Link</h6>
+                <span><a href="https://www.ieee.org/membership/join/" target="_blank">Apply Now</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2022 University of Birmingham IEEE Student Chapter. All Rights Reserved. 
+          <br>Design: from <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        </div class="col-lg-9" align-self-center>
+          <div class="row">
+            <div class="col-lg-12">
+              <figure class="alignleft"><img loading="lazy" width="1147" height="254" src="{% static 'images/ieee_uob_logo.png' %}" alt="" class="wp-image-3657" srcset="http://www.ieee-manchester.org.uk/wp-content/uploads/2019/07/Main-Page-1024x138__edit-1.png 1147w, http://www.ieee-manchester.org.uk/wp-content/uploads/2019/07/Main-Page-1024x138__edit-1-300x66.png 300w, http://www.ieee-manchester.org.uk/wp-content/uploads/2019/07/Main-Page-1024x138__edit-1-768x170.png 768w, http://www.ieee-manchester.org.uk/wp-content/uploads/2019/07/Main-Page-1024x138__edit-1-1024x227.png 1024w" sizes="(max-width: 1147px) 100vw, 1147px"></figure>
+            </div>
+          </div>
+        <div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'js/isotope.min.js' %}"></script>
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+    <script src="{% static 'js/lightbox.js' %}"></script>
+    <script src="{% static 'js/tabs.js' %}"></script>
+    <script src="{% static 'js/video.js' %}"></script>
+    <script src="{% static 'js/slick-slider.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
+</html>
